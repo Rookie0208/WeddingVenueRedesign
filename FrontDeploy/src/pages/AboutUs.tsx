@@ -18,9 +18,9 @@ const AboutUs: React.FC = () => {
           <section id="title">
             <div
               id="banner"
-              className="lg:text-center bg-[url('/aboutusbanner.jpg')] h-64 flex place-items-center place-content-center bg-cover"
+              className="lg:text-center bg-[url('/weddingz_pics/mainBG.jpg')] h-64 flex place-items-center place-content-center bg-cover"
             >
-              <h2 className="text-5xl font-marcellus font-semibold text-black">
+              <h2 className="text-5xl font-marcellus font-semibold text-white">
                 About Us
               </h2>
             </div>
@@ -55,7 +55,7 @@ const AboutUs: React.FC = () => {
         </div>
         <div className="flex-1 h-64 sm:h-72 overflow-hidden">
           <img
-            src="/aboutusLeft.jpg"
+            src="/weddingz_pics/ourMissionPic.jpg"
             alt="Our Mission"
             className="w-full h-full object-cover transition-transform duration-300 transform hover:scale-110"
           />
@@ -88,7 +88,7 @@ const AboutUs: React.FC = () => {
         </div>
         <div className="flex-1 h-64 sm:h-72 overflow-hidden">
           <img
-            src="/aboutusRight.jpg"
+            src="/weddingz_pics/ourStory.jpg"
             alt="Our Story"
             className="w-full h-full object-cover transition-transform duration-300 transform hover:scale-110"
           />
