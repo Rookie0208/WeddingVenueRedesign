@@ -515,8 +515,8 @@ const UserTabView: React.FC = () => {
 
   return (
     <div
-      className="flex flex-col md:flex-row justify-between items-stretch p-6 h-76 bg-pink-400"
-      style={{ backgroundColor: 'rgb(254,234,232)', borderRadius: '12px' }}
+      className="flex flex-col md:flex-row justify-between items-stretch p-6 h-76 bg-gradient-to-r from-[#1e1e1e] to-gray-800 text-white"
+      style={{borderRadius: '12px' }}
     >
       {/* Sidebar */}
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
@@ -541,13 +541,13 @@ const UserTabView: React.FC = () => {
               <div className="flex justify-end space-x-4">
                 <button
                   onClick={onClose}
-                  className="px-4 py-2 rounded-md bg-gray-200 hover:bg-gray-300 text-gray-700"
+                  className="px-4 py-2 rounded-md bg-gray-700 hover:bg-black text-gray-700"
                 >
                   Cancel
                 </button>
                 <button
                   onClick={onLogout}
-                  className="px-4 py-2 rounded-md bg-red-600 hover:bg-red-700 text-white"
+                  className="px-4 py-2 rounded-md bg-gray-500 hover:bg-black text-white"
                 >
                   Logout
                 </button>

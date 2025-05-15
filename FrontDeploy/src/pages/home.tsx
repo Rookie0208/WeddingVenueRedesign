@@ -133,7 +133,7 @@ const Home: React.FC = () => {
                     "1px 1px 10px black, 0 0 4em black, 0 0 2em white",
                 }}
               >
-                Jha mile perfect venue, vahi hai  
+                Jaha mile perfect venue, vahi hai  
                 <span className="text-[#d0d0d0]"> Weddingzvenue</span>
               </h1>
               <h2
