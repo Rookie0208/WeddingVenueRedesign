@@ -19,9 +19,12 @@ import Universal from "../components/skeleton/Universal";
 import WeddingCategoriesShort from "../components/WeddingCategShort";
 // import FloatingMenu from "../components/FloatingMenu";
 const images = [
-  "/home1.jpg",
-  "/home2.jpg",
-  "/home3.jpg",
+  "/weddingz_pics/ourStory.jpg",
+  "/weddingz_pics/home5.jpg",
+  "/weddingz_pics/home6.jpg",
+  "/weddingz_pics/home7.jpg",
+  // "/weddingz_pics/home8.jpg",
+  "/home5.jpg",
   "/home4.jpg",
 ];
 
@@ -130,8 +133,8 @@ const Home: React.FC = () => {
                     "1px 1px 10px black, 0 0 4em black, 0 0 2em white",
                 }}
               >
-                Plan Your Perfect 
-                <span className="text-[#d0d0d0]"> Indian Wedding</span>
+                Jha mile perfect venue, vahi hai  
+                <span className="text-[#d0d0d0]"> Weddingzvenue</span>
               </h1>
               <h2
                 className="text-2xl font-light font-roboto text-white mt-4"

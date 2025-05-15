@@ -176,12 +176,12 @@ const VendorProfileCard: React.FC<Props> = ({ name, profile, phone, email, passw
                 <p className="text-gray-500">{phone || "Phone number not available"}</p>
                 <button
                   onClick={handleEditClick}
-                  className="bg-pink-400 text-white px-8 py-2 rounded-md w-full my-4"
+                  className="bg-gray-700 text-white px-8 py-2 rounded-md w-full my-4 hover:bg-black"
                 >
                   Edit
                 </button>
                 <button
-                  className="bg-pink-400 text-white px-8 py-2 rounded-md w-full mb-4 hover:bg-pink-200  hover:border-[#110069]"
+                  className="bg-gray-700 text-white px-8 py-2 rounded-md w-full mb-4 hover:bg-black  hover:border-[#110069]"
                   onClick={() => handleTabClick("Logout")}
                 >
                   Logout
@@ -191,11 +191,11 @@ const VendorProfileCard: React.FC<Props> = ({ name, profile, phone, email, passw
           </div>
         </div>
         {/* Business Name and Type of Business */}
-        <div className="shadow-md rounded-lg p-4 mr-4" style={{ backgroundColor: 'rgb(254,234,232)', borderRadius: '12px' }}>
-          <h3 className="text-lg font-bold text-gray-600">Business Name:</h3>
+        <div className="shadow-md rounded-lg p-4 mr-4 bg-gradient-to-r from-[#1e1e1e] to-gray-800 text-white" style={{borderRadius: '12px' }}>
+          <h3 className="text-lg font-bold text-white">Business Name:</h3>
           <p className="text-white-100 text-3xl">{vendorData?.businessName || "Not Available"}</p>
 
-          <h3 className="text-lg font-bold text-gray-600 mt-3">Type of Business:</h3>
+          <h3 className="text-lg font-bold text-white mt-3">Type of Business:</h3>
           <p className="text-white-100  text-3xl">{vendorData?.type_Of_Business || "Not Available"}</p>
         </div>
       </div>

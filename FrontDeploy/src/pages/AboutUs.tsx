@@ -112,7 +112,7 @@ const AboutUs: React.FC = () => {
 
               {/* Founder name and title */}
               <div className="text-xl font-medium font-inter mb-6 text-[#1c1c1c]">
-                <p>ABDUL KAREEM - Founder & CEO</p>
+                <p></p>
               </div>
 
               {/* Circular founder's photo */}
@@ -127,11 +127,9 @@ const AboutUs: React.FC = () => {
               {/* Founder's description */}
               <div className="text-gray-700">
                 <p className="mb-2 px-4 text-center text-lg font-roboto">
-                  Abdul Kareem is a visionary leader dedicated to making every
-                  wedding unique. He believes that every couple deserves a
-                  wedding that reflects their unique love story, and we are
-                  committed to making that vision a reality through exceptional
-                  service and attention to detail.
+                  A visionary leader driven by the passion to make every wedding truly special. 
+                  With a firm belief that every couple deserves a celebration that reflects their unique love story, 
+                  we are dedicated to bringing that vision to life through exceptional service and meticulous attention to detail.
                 </p>
               </div>
             </div>

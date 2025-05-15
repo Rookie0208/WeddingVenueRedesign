@@ -31,13 +31,13 @@ const VendorProfilePage: React.FC = () => {
   return (
     <>
       <NavBar />
-      <div className="p-2" style={{ backgroundColor: 'rgb(254,234,232)'}}>
+      <div className="p-2 bg-gradient-to-r from-[#1e1e1e] to-gray-800 text-white">
         <div className="text-3xl text-center font-semibold mt-3">{vendorData?.businessName}</div>
       </div>
 
-      <div className="flex justify-start" style={{ backgroundColor: 'rgb(254,234,232)', borderRadius: '12px' }}>
+      <div className="flex justify-start bg-gradient-to-r from-[#1e1e1e] to-gray-800 text-white" style={{ borderRadius: '12px' }}>
 
-        <div className="w-1/2 lg:w-96 m-4 bg-white-500-a rounded-lg">
+        <div className="w-1/2 lg:w-96 m-4 bg-white bg-opacity-90 rounded-lg">
 
           <VendorProfileCard
             name={vendorData?.name}

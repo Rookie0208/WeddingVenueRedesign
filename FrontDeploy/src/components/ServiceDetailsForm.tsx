@@ -282,10 +282,10 @@ const ServiceDetailsForm: React.FC<Props> = ({ address, price, portfolio, experi
                                 </div>
                             </div>
 
-                            <button type="submit" className="text-white bg-pink-400 px-4 py-3 rounded-md text-l">
+                            <button type="submit" className="text-white bg-gray-700 hover:bg-black px-4 py-3 rounded-md text-l">
                                 Update
                             </button>
-                            <button onClick={handleCancelClick} className="ml-4 text-white bg-pink-400 px-4 py-3 rounded-md text-l">
+                            <button onClick={handleCancelClick} className="ml-4 text-white bg-gray-500 hover:bg-black px-4 py-3 rounded-md text-l">
                                 Cancel
                             </button>
                         </form>
@@ -434,7 +434,7 @@ const ServiceDetailsForm: React.FC<Props> = ({ address, price, portfolio, experi
                             </div>
                             <button
                                 onClick={handleEditClick}
-                                className="bg-pink-400 text-white text-[#110069]  px-4 py-3 rounded-md text-l"
+                                className="bg-gray-700 hover:bg-black text-white text-[#110069]  px-4 py-3 rounded-md text-l"
                             >
                                 Edit
                             </button>
