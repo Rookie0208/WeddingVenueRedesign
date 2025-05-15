@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { FaUser, FaBell, FaBars, FaTimes } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { RootState } from "../redux/store";
-import { FaEnvelope, FaPhone, FaEdit } from "react-icons/fa";
+import { FaEnvelope, FaEdit } from "react-icons/fa";
 import ReviewModal from "./ReviewModal";
 
 import Logo from "/weddingz_venue_logo_transparent.png";
