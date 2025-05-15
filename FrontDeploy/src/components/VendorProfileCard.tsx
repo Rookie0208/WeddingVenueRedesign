@@ -159,10 +159,10 @@ const VendorProfileCard: React.FC<Props> = ({ name, profile, phone, email, passw
                   className="w-full bg-transparent text-black border-b border-gray-300 focus:outline-none focus:border-pink-400 py-1"
                 />
               </div> */}
-                <button type="submit" className="bg-pink-400 text-white px-4 py-2 rounded-md">
+                <button type="submit" className="bg-gray-500 hover:bg-black text-white px-4 py-2 rounded-md">
                   Update
                 </button>
-                <button onClick={handleCancelClick} className="ml-4 bg-pink-400 text-white px-4 py-2 rounded-md">
+                <button onClick={handleCancelClick} className="ml-4 bg-gray-500 hover:bg-black text-white px-4 py-2 rounded-md">
                   Cancel
                 </button>
               </form>

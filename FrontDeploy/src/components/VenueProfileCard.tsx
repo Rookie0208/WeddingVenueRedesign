@@ -163,12 +163,12 @@ const VenueProfileCard: React.FC<Props> = ({ yourName, profile, phone, email, pa
               </div> */}
               <button
                 type="submit"
-                className="bg-pink-400 text-white px-4 py-2 rounded-md">
+                className="bg-gray-500 hover:bg-black text-white px-4 py-2 rounded-md">
                 Update
               </button>
               <button
                 onClick={handleCancelClick}
-                className="bg-pink-400 text-white px-4 py-2 rounded-md ml-4">
+                className="bg-gray-500 hover:bg-black text-white px-4 py-2 rounded-md ml-4">
                 Cancel
               </button>
             </form>
@@ -179,7 +179,7 @@ const VenueProfileCard: React.FC<Props> = ({ yourName, profile, phone, email, pa
               <p className="text-gray-500">{phone}</p>
               <button
                 onClick={handleEditClick}
-                className="bg-pink-400 text-white px-8 py-2 rounded-md w-full mt-4"
+                className="bg-gray-700 hover:bg-black text-white px-8 py-2 rounded-md w-full mt-4"
               >
                 Edit
               </button>
@@ -190,14 +190,14 @@ const VenueProfileCard: React.FC<Props> = ({ yourName, profile, phone, email, pa
           {['Logout'].map(tab => (
             <div
               key={tab}
-              className="bg-pink-400 text-white px-8 py-2 rounded-md w-full mb-4 text-center hover:bg-pink-200  hover:border-[#110069]"
+              className="bg-gray-700 text-white px-8 py-2 rounded-md w-full mb-4 text-center hover:bg-black  hover:border-[#110069]"
               onClick={() => handleTabClick(tab)}
             >
               {tab}
             </div>
           ))}
         </div>
-        <div className="shadow-md rounded-lg p-4 w-80" style={{ backgroundColor: 'rgb(254,234,232)', borderRadius: '12px' }}>
+        <div className="shadow-md rounded-lg p-4 w-80 bg-gradient-to-r from-[#1e1e1e] to-gray-800" style={{ borderRadius: '12px' }}>
           <h3 className="text-lg font-bold text-gray-600">Business Name:</h3>
           <p className="text-white-100 text-3xl">{venueData?.businessName || "Not Available"}</p>
 
