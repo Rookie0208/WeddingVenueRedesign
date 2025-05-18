@@ -4,10 +4,10 @@ import { Link, useLocation } from "react-router-dom";
 import { FaUser, FaBell, FaBars, FaTimes } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { RootState } from "../redux/store";
-import { FaEnvelope, FaPhone, FaEdit } from "react-icons/fa";
+import { FaEnvelope, FaEdit } from "react-icons/fa";
 import ReviewModal from "./ReviewModal";
 
-import Logo from "/weddingz_venue_logo_transparent.png";
+import Logo from "../../public/abdul/sitelogo3_squared.png";
 
 const NavBar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
@@ -93,7 +93,7 @@ const NavBar: React.FC = () => {
 
 
           <Link to="/" className="flex items-center">
-            <img src={Logo} alt="Logo" className="w-24 h-12 items-stretch my-0" />
+            <img src={Logo} alt="Logo" className="w-24 h-16 items-stretch my-0" />
           </Link>
 
           <div className="options ">
