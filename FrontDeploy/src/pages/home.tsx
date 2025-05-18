@@ -19,13 +19,14 @@ import Universal from "../components/skeleton/Universal";
 import WeddingCategoriesShort from "../components/WeddingCategShort";
 // import FloatingMenu from "../components/FloatingMenu";
 const images = [
-  "/weddingz_pics/ourStory.jpg",
-  "/weddingz_pics/home5.jpg",
-  "/weddingz_pics/home6.jpg",
-  "/weddingz_pics/home7.jpg",
-  // "/weddingz_pics/home8.jpg",
-  "/home5.jpg",
-  "/home4.jpg",
+  "/abdul/home8.jpg",
+  "/abdul/home9.jpg",
+  "/abdul/home10.jpg",
+  "/abdul/home11.jpg",
+  "/abdul/home12.jpg",
+  "/abdul/home13.jpg",
+  // "/home5.jpg",
+  // "/home4.jpg",
 ];
 
 const Home: React.FC = () => {
@@ -112,9 +113,10 @@ const Home: React.FC = () => {
 
       <section id="heroSection">
         {/* Carousel Section */}
-        <div className="relative w-full h-screen overflow-hidden">
-          <div className="absolute inset-0 w-full h-full">
-            {images.map((image, index) => (
+      <div className="relative w-full h-screen overflow-hidden">
+  {/* Background Image Carousel */}
+ <div className="absolute inset-0 w-full h-full">
+  {images.map((image, index) => (
               <div
                 key={index}
                 className={`absolute inset-0 bg-cover bg-center w-full h-full transition-opacity duration-1000 ${index === currentIndex ? "opacity-100" : "opacity-0"
@@ -122,57 +124,68 @@ const Home: React.FC = () => {
                 style={{ backgroundImage: `url(${image})` }}
               ></div>
             ))}
-          </div>
-          {/* Content Container */}
-          <div className="relative flex items-center justify-center w-full h-full bg-black bg-opacity-50">
-            <div className="w-[1200px] text-center transform translate-y-24">
-              <h1
-                className="text-5xl font-bold font-marcellus text-white"
-                style={{
-                  textShadow:
-                    "1px 1px 10px black, 0 0 4em black, 0 0 2em white",
-                }}
-              >
-                Jaha mile perfect venue, vahi hai  
-                <span className="text-[#d0d0d0]"> Weddingzvenue</span>
-              </h1>
-              <h2
-                className="text-2xl font-light font-roboto text-white mt-4"
-                style={{
-                  textShadow:
-                    "1px 1px 10px black, 0 0 4em black, 0 0 2em white",
-                }}
-              >
-                Find the best wedding vendors with thousands of trusted reviews
-              </h2>
+</div>
 
-              {/* City Selector and Search Button */}
-              <div className="flex justify-center items-center space-x-0 mt-8">
-                <select
-                  value={selectedCity}
-                  onChange={handleCityChange}
-                  className="w-1/2 md:w-1/3 px-4 py-2 border border-gray-300 bg-white bg-opacity-90 text-gray-900 focus:ring focus:ring-indigo-300 focus:outline-none transition duration-300"
-                >
-                  <option value="">Select City</option>
-                  {cities.map((city) => (
-                    <option key={city} value={city}>
-                      {city}
-                    </option>
-                  ))}
-                </select>
+  {/* Content Overlay */}
+  <div className="relative flex items-center justify-center w-full h-full bg-black bg-opacity-10 px-4">
+    <div className="max-w-[1200px] w-full text-center transform translate-y-16 sm:translate-y-24">
+      
+      {/* Title */}
+      <h1
+  className="text-white font-bold font-marcellus text-2xl sm:text-4xl md:text-4xl lg:text-5xl px-2"
+  style={{
+    textShadow: "1px 1px 10px black, 0 0 4em black, 0 0 2em white",
+  }}
+>
+  Jaha mile perfect venue, vahi hai <span className="text-[#d0d0d0]">Weddingzvenue</span>
+</h1>
 
-                <button className="px-6 py-2 bg-[#1e1e1e] text-white border-0">
-                  Search
-                </button>
-              </div>
-              <div className="text-white-500 mt-4 text-lg font-roboto font-light tracking-wide" style={{
-                  textShadow:
-                    "1px 1px 10px black, 0 0 4em black, 0 0 2em white",
-                }}>
-              Wedding Photographers in IndiaBridal | Makeup Artists in IndiaWedding | Venues in India</div>
-            </div>
-          </div>
-        </div>
+
+      {/* Subtitle */}
+     <h2
+  className="text-white font-bold font-roboto mt-3 text-sm sm:text-base md:text-xl lg:text-2xl px-2"
+  style={{
+    textShadow: "1px 1px 10px black, 0 0 4em black, 0 0 2em white",
+  }}
+>
+  Find the best wedding vendors with thousands of trusted reviews
+</h2>
+
+
+      {/* Dropdown & Button */}
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6 px-4">
+        <select
+          value={selectedCity}
+          onChange={handleCityChange}
+          className="w-full sm:w-1/2 md:w-1/3 px-4 py-2 border border-gray-300 bg-white bg-opacity-90 text-gray-900 focus:ring focus:ring-indigo-300 focus:outline-none transition duration-300"
+        >
+          <option value="">Select City</option>
+          {cities.map((city) => (
+            <option key={city} value={city}>
+              {city}
+            </option>
+          ))}
+        </select>
+
+        <button className="w-full sm:w-auto px-6 py-2 bg-[#1e1e1e] text-white border-0">
+          Search
+        </button>
+      </div>
+
+      {/* Footer Text */}
+     <div
+  className="text-white mt-4 text-xs sm:text-sm md:text-base font-roboto font-bold tracking-wide px-2 text-center"
+  style={{
+    textShadow: "1px 1px 10px black, 0 0 4em black, 0 0 2em white",
+  }}
+>
+  Wedding Photographers in India | Bridal Makeup Artists in India | Wedding Venues in India
+</div>
+
+    </div>
+  </div>
+</div>
+
       </section>
 
       <section id='topVenues'>
