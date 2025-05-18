@@ -143,7 +143,7 @@ const Home: React.FC = () => {
 
       {/* Subtitle */}
      <h2
-  className="text-white font-light font-roboto mt-3 text-sm sm:text-base md:text-xl lg:text-2xl px-2"
+  className="text-white font-bold font-roboto mt-3 text-sm sm:text-base md:text-xl lg:text-2xl px-2"
   style={{
     textShadow: "1px 1px 10px black, 0 0 4em black, 0 0 2em white",
   }}
@@ -174,7 +174,7 @@ const Home: React.FC = () => {
 
       {/* Footer Text */}
      <div
-  className="text-white mt-4 text-xs sm:text-sm md:text-base font-roboto font-light tracking-wide px-2 text-center"
+  className="text-white mt-4 text-xs sm:text-sm md:text-base font-roboto font-bold tracking-wide px-2 text-center"
   style={{
     textShadow: "1px 1px 10px black, 0 0 4em black, 0 0 2em white",
   }}
