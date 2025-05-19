@@ -58,8 +58,29 @@ const VenueCardMain: React.FC<VenueProps> = ({ venue }) => {
             <span>Non-Veg</span>
           </div>
           <div className="flex items-left justify-between text-lg font-semibold text-base mb-2">
-            <span>₹{venue.vegPrice?.slice(0, 5)} <span className="text-sm text-gray-900 font-normal">per plate</span></span>
-            <span>₹{venue.nonVegPrice} <span className="text-sm text-gray-900 font-normal">per plate</span></span>
+            {/* <span>₹{venue.vegPrice} <span className="text-sm text-gray-900 font-normal">per plate</span></span> */}
+            <span>
+              {venue.vegPrice === "none" ? (
+                "None"
+              ) : (
+                <>
+                  ₹{venue.vegPrice}{" "}
+                  <span className="text-sm text-gray-900 font-normal">per plate</span>
+                </>
+              )}
+            </span>
+            <span>
+              {venue.nonVegPrice === "none" ? (
+                "None"
+              ) : (
+                <>
+                  ₹{venue.nonVegPrice}{" "}
+                  <span className="text-sm text-gray-900 font-normal">per plate</span>
+                </>
+              )}
+            </span>
+
+            {/* <span>₹{venue.nonVegPrice} <span className="text-sm text-gray-900 font-normal">per plate</span></span> */}
           </div>
 
           <div className="flex items-center text-sm text-base font-semibold mb-2">

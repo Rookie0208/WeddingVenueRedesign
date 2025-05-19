@@ -80,11 +80,11 @@ const VenuePriceCard: React.FC<VenuePriceCardProps> = ({ name, contactNumber,ema
       <h3 className="text-lg font-bold text-gray-800">Starting Price</h3>
       <div className="flex justify-between items-center mt-4">
         <span className="text-gray-700">Veg Price</span>
-        <span className="text-gray-900 font-bold">₹ {vegPrice}</span>
+        <span className="text-gray-900 font-bold">{vegPrice === "none"? "None" : `₹ ${vegPrice}`}</span>
       </div>
       <div className="flex justify-between items-center mt-2">
         <span className="text-gray-700">Non-Veg Price</span>
-        <span className="text-gray-900 font-bold">₹ {nonVegPrice}</span>
+        <span className="text-gray-900 font-bold">{nonVegPrice === "none"? "None" : `₹ ${nonVegPrice}`}</span>
       </div>
       <button
         onClick={togglePricingInfo}
