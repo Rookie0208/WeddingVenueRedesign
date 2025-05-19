@@ -5,7 +5,7 @@ import { FaArrowRight } from 'react-icons/fa';
 const RelatedArticles: React.FC = () => {
   return (
     <section className="py-16 bg-gradient-to-r from-[#1e1e1e] to-gray-800 text-white">
-      <div className="container mx-auto px-6 text-center">
+      <div className="container mx-auto px-4 text-center">
         <h2 className="text-5xl font-bold mb-8">
           Discover the Best Venues on Our Platform
         </h2>
