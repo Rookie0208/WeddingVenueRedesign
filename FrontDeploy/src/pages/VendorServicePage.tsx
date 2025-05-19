@@ -46,7 +46,7 @@ function VendorServicePage() {
   return (
     <>
       <NavBar />
-      <div className="container mx-auto px-28 mt-8">
+      <div className="container mx-auto px-10 mt-8">
         {/* Hero Section */}
         {vendorData?.portfolio?.[0] && (
           <div className="w-full">
@@ -60,7 +60,7 @@ function VendorServicePage() {
         )}
 
         {/* content Section  */}
-        <div className="container -mt-16 mx-auto flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 px-4">
+        <div className="container -mt-16 mx-auto flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 ">
           {/* left section  */}
           <div className="w-full lg:w-3/4 space-y-4">
             <div className="bg-white shadow">
@@ -108,7 +108,7 @@ function VendorServicePage() {
             </div>
           </div>
         </div>
-        <div className="my-4 mx-4">
+        <div className="my-4">
           <TermsAndPolicyCard />
         </div>
         <div className="container mx-auto px-4 mt-4">

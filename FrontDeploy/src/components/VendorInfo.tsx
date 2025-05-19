@@ -80,15 +80,16 @@ const VendorInfo: React.FC<VendorInfoProps> = ({
     <div className="bg-white shadow-md p-4">
       <div className="flex justify-between items-center mb-2">
           <h2 className="text-xl font-bold text-gray-800 mb-2">{name}</h2>
-          <p>{businessType}</p>
+          
         <div className="flex items-center text-green-600">
           <span className="text-lg font-semibold">{reviews} reviews</span>
         </div>
       </div>
       <p className="text-gray-600 text-sm mb-1 flex items-center">
         <FaMapMarkerAlt className="mr-1 text-blue-600" />
-        {location} 
+        {location}
       </p>
+       <p>{businessType}</p>
       <p className="text-gray-600 text-sm mb-4">{address}</p>
       <div className="flex items-center justify-between text-gray-500 text-sm mt-4">
         <span>{photosCount} Photos</span>

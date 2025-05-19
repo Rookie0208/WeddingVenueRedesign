@@ -103,23 +103,33 @@ function VenueList() {
       <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 mt-6 flex-grow">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-6 gap-x-4 sm:gap-x-6">
           {filteredVenues.length > 0 ? (
-            filteredVenues.map((venue, index) => (
-              <VenueCardMain
-                key={index}
-                venue={{
-                  name: venue?.businessName,
-                  state: venue.state,
-                  city: venue.city,
-                  maxGuests: venue.guestCapacity,
-                  contact: venue.phone,
-                  description: venue.summary,
-                  vegPrice: venue.foodPackages?.match(/\d+/)?.[0] || "N/A",
-                  nonVegPrice: "N/A",
-                  images: venue.images,
-                  id: venue._id,
-                }}
-              />
-            ))
+            filteredVenues.map((venue, index) => {
+              const food = venue.foodPackages || "";
+              const vegMatch = food.match(/veg\s*[:= -]\s*(\d+)/i);
+              const nonVegMatch = food.match(/nonveg\s*[:= -]\s*(\d+)/i);
+              const allNumbers = food.match(/\d+/g) || [];
+
+              const veg = vegMatch?.[1] || allNumbers[0] || "none";
+              const nonVeg = nonVegMatch?.[1] || allNumbers[1] || "none";
+
+              return (
+                <VenueCardMain
+                  key={index}
+                  venue={{
+                    name: venue?.businessName,
+                    state: venue.state,
+                    city: venue.city,
+                    maxGuests: venue.guestCapacity,
+                    contact: venue.phone,
+                    description: venue.summary,
+                    vegPrice: veg,
+                    nonVegPrice: nonVeg,
+                    images: venue.images,
+                    id: venue._id,
+                  }}
+                />
+              )
+            })
           ) : (
             <div className="col-span-full text-center text-gray-500 text-sm sm:text-base py-8">
               No Venue found
@@ -137,5 +147,5 @@ function VenueList() {
       <Footer />
     </div>
   );
-};
+}
 export default VenueList;
