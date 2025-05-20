@@ -193,7 +193,7 @@ const NavBar: React.FC = () => {
 </div>
 
         <div className="md:hidden">
-          <button onClick={toggleMobileMenu} className="text-black">
+          <button onClick={toggleMobileMenu} className="text-white">
             {mobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
@@ -206,7 +206,7 @@ const NavBar: React.FC = () => {
           </div>
           <button
             onClick={toggleMobileMenu}
-            className="absolute top-4 right-4 text-light-blue"
+            className="absolute top-4 right-4 text-gray-700"
           >
             <FaTimes size={24} />
           </button>
