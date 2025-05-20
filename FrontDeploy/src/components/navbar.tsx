@@ -8,6 +8,7 @@ import { FaEnvelope, FaEdit } from "react-icons/fa";
 import ReviewModal from "./ReviewModal";
 
 import Logo from "../../public/abdul/sitelogo3_squared.png";
+import MiniLogo from "../../public/W.png";
 
 const NavBar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
@@ -15,7 +16,7 @@ const NavBar: React.FC = () => {
   const role = useSelector((state: RootState) => state?.auth?.user?.role);
   const location = useLocation();
   const currentPath = location.pathname;
-  const [opacity, setOpacity] = useState(1);
+  // const [opacity, setOpacity] = useState(1);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const handleModalOpen = () => setIsModalOpen(true);
   const handleModalClose = () => setIsModalOpen(false);
@@ -31,9 +32,9 @@ const NavBar: React.FC = () => {
       if (currentPath === "/") {
         if (window.scrollY > 50 && window.scrollY < 750) {
           // desired scroll threshold
-          setOpacity(0.9); // Set to full opacity after scrolling
+          // setOpacity(0.9); // Set to full opacity after scrolling
         } else {
-          setOpacity(1); // Default opacity
+          // setOpacity(1); // Default opacity
         }
       }
     };
@@ -53,7 +54,6 @@ const NavBar: React.FC = () => {
   return (
     <nav
       className="bg-[#1b1b1b] py-2 pl-2 pr-4 font-roboto relative z-10 m-0 sticky top-0 "
-      style={{ opacity }}
     >
       <div className="bg-[#161616] text-white pl-2 pr-4 flex justify-between items-center pt-2 pb-2 rounded-md shadow-sm">
         {/* Contact Details (Left-aligned) */}
@@ -193,16 +193,16 @@ const NavBar: React.FC = () => {
 </div>
 
         <div className="md:hidden">
-          <button onClick={toggleMobileMenu} className="text-light-blue">
+          <button onClick={toggleMobileMenu} className="text-black">
             {mobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
       </div>
 
       {mobileMenuOpen && (
-        <div className="fixed inset-0 bg-[#090808] text-light-blue flex flex-col items-center justify-center space-y-4 z-15 transition-transform duration-300">
+        <div className="fixed inset-0 bg-white text-black flex flex-col items-center justify-center space-y-4 z-15 transition-transform duration-300">
           <div className="absolute top-8">
-            <img src={Logo} alt="Logo" className="w-24 h-12 items-stretch" />
+            <img src={MiniLogo} alt="Logo" className="w-24 h-16 items-stretch" />
           </div>
           <button
             onClick={toggleMobileMenu}
@@ -282,7 +282,7 @@ const NavBar: React.FC = () => {
               <li>
                 <Link
                   to="/login"
-                  className="text-2xl text-light-blue hover:text-gray-200"
+                  className="text-2xl text-black hover:text-gray-200"
                   onClick={toggleMobileMenu}
                 >
                   Login
@@ -293,7 +293,7 @@ const NavBar: React.FC = () => {
               <li>
                 <Link
                   to={url}
-                  className="text-2xl text-light-blue hover:text-gray-200"
+                  className="text-2xl text-black hover:text-gray-200"
                   onClick={toggleMobileMenu}
                 >
                   <FaUser />
